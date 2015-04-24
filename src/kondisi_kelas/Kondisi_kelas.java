@@ -1,4 +1,4 @@
-package kondisikelas;
+package kondisi_kelas;
 
 
 public class Kondisi_kelas {
@@ -12,6 +12,7 @@ public class Kondisi_kelas {
     private int Kondisi_pencahayaan;
     private int Kondisi_kelembapan;
     private int Kondisi_suhu;
+    
     private String Kondisi_kebisingan;
     private String Kondisi_bau;
     private String Kondisi_kebocoran;
@@ -70,7 +71,20 @@ public class Kondisi_kelas {
         else {
             System.out.println("pencahayaan tidak bagus");  
         }
-        System.out.println("kondisi"+Kondisi_kelembapan);
+        if (getKondisi_kelembapan() >=70 && getKondisi_kelembapan()<=80){
+            System.out.println("kelembapan sesuai");
+        }
+        else{
+            System.out.println("kelebapan tidak sesuai");
+        }
+        if (getKondisi_suhu()>=25 && getKondisi_suhu()<=35){
+            System.out.println("suhu sesuai");
+        }
+        else{
+            System.out.println("suhu tidak sesuai");
+        }
+        
+        
         System.out.println("kondisi="+Kondisi_suhu);
         System.out.println("kondisi="+Kondisi_kebisingan);
         System.out.println("kondisi"+Kondisi_bau);
